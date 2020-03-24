@@ -12,3 +12,12 @@ Agora, vamos adicionar o `yarn add axios` para incluir o axios no nosso projeto 
 O próximo passo é adicionar a api da `rockeseat-nodejs do Heroku` no projeto e consumi-la.
 
 Para isso, vamos parar de usar a nomenclatura `StateLess` e passar a usar `{ Component }` no projeto para tratar o `state`.
+
+Começamos a trabalhar com as routes e paga isso usamos `yarn add react-router-dom`.
+
+Assim, criamos a rota `Main`, que é a principal/primeira e a rota `Product` passando um id da mesma forma que é no `nodejs` quando queremos trazer apenas 1 produto e direcionar para uma rota exclusiva dele.
+
+Também adicionamos na rota primária o atributo `exact` para só cair naquela rota quando não recebermos exatamente nada na url, redirecionando assim para a `Main`.
+
+Se não tiver esse atributo, qualquer rota que vier depois deste `Route`, vai ser ignorada.
+
